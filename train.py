@@ -636,8 +636,10 @@ def run(**kwargs):
         setattr(opt, k, v)
     main(opt)
     return opt
-
-
+ 
+from yolov5 import train,detect
 if __name__ == "__main__":
-    opt = parse_opt()
-    main(opt)
+    #opt = parse_opt()
+    #main(opt)
+    train.run(imgsz=416, data='data\scratch.yaml', weights='yolov5s.pt',epochs=400,batch=64)
+    #detect.run(imgsz=416,weights='runs/train/exp3/weights/best.pt', source ='test.jpg',view_img=True)
