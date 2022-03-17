@@ -3,7 +3,7 @@ train: C:\Users\939541\yolov5\training
 val: C:\Users\939541\yolov5\training
 
 # Classes
-nc: 6  # number of classes
+nc: 6  # number of classes 
 names: ['Dia ME','Dia Zip','Good','H Light','H Severe','Mechanical Scratch']  # class names
 
 
